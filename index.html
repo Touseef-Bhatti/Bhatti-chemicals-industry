@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leading Zinc Oxide manufacturing company offering premium quality products for various industries.">
+    <title>Bhatti Chemicals Industry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-img {
+    width: 250px; /* Adjust the logo size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+   
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* For pseudo-element positioning */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: color 0.3s ease; /* Transition for color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add shadow to text */
+}
+
+nav ul li a:hover {
+    color: #14a341; /* Change text color on hover */
+}
+
+nav ul li::after { /* Create an underline effect */
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Position it below the text */
+    height: 2px; /* Underline height */
+    background: silver; /* Underline color */
+    transform: scaleX(0); /* Start from 0 scale */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1); /* Expand underline on hover */
+}
+
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-content {
+    z-index: 1;
+    position: relative; /* Ensures that any absolute elements are positioned relative to this container */
+    color: white; /* Assuming you want white text */
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Lighter shadow for the heading */
+}
+
+.hero p {
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Lighter shadow for the paragraph */
+}
+
+/* Optional: Background overlay for better text visibility */
+.hero {
+    position: relative; /* Ensure it contains absolutely positioned elements */
+    background: url('your-image.jpg') no-repeat center center/cover; /* Add your background image */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Optional: Create an overlay effect */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay for contrast */
+    z-index: -1; /* Position it behind the text */
+}
+
+.hero p {
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Lighter shadow for the paragraph */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for opacity and transform */
+}
+
+/* Animation applied on hover */
+.hero:hover p {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Retain lighter shadow effect on hover */
+}
+
+
+
+#about {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative; /* Ensures proper positioning for the overlay */
+}
+
+/* Optional: Background overlay for better text visibility */
+#about::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay for contrast */
+    z-index: -1; /* Position it behind the text */
+}
+
+.about-h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow to the heading */
+}
+
+.about-p {
+    font-size: 23px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow to the paragraph */
+}
+
+#about:hover .about-p {
+    animation: slideInFromBottom 2.5s forwards;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%); /* Start off-screen below */
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully opaque */
+    }
+}
+
+/* Content Section Styles */
+.content-section {
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Video Styles */
+.background-video-small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Product Section Styles */
+.product-section {
+    padding: 40px 20px;
+    text-align: left;
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Products Section Background */
+#products {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative; /* Ensures proper positioning for the overlay */
+    overflow: hidden; /* Prevent overflow during animations */
+}
+
+/* Background Overlay for Better Text Visibility */
+#products::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay for contrast */
+    z-index: -1; /* Position it behind the text */
+}
+
+/* Product Title Styles */
+.products-title {
+    padding-left: 35px;
+    font-size: 42px; /* Adjusted font size */
+    margin-top: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow to the heading */
+}
+
+/* Product Description Styles */
+.products-description {
+    padding-left: 50px;
+    margin-top: 20px;
+    font-size: 40px; /* Adjusted font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.5); /* Add shadow to the paragraph */
+    overflow-wrap: break-word; /* Break words if they exceed the container width */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Products List Styles */
+.products-list {
+    list-style: none;
+    margin-left: 82px;
+    margin-top: 10px;
+    font-size: 18px; /* Adjusted font size for list items */
+}
+
+/* Initial State for List Items */
+.products-list li {
+    opacity: 0; /* Start with hidden items */
+    transform: translateY(20px); /* Start below */
+    animation: none; /* No animation initially */
+}
+
+/* Apply animations only on hover */
+#products:hover .products-list li {
+    animation: fadeIn 1.5s forwards; /* Adjusted animation duration */
+}
+
+/* Animation to reveal list items */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1; /* Fully opaque */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* Delay for each list item with smoother timing */
+.products-list li:nth-child(1) { animation-delay: 0.4s; }
+.products-list li:nth-child(2) { animation-delay: 0.6s; }
+.products-list li:nth-child(3) { animation-delay: 0.8s; }
+.products-list li:nth-child(4) { animation-delay: 1s; }
+.products-list li:nth-child(5) { animation-delay: 1.2s; }
+
+/* Background Video Styles */
+.background-video-small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+    .content-section {
+        padding: 40px 20px;
+        text-align: center;
+        position: relative;
+        color: white;
+    }
+
+    .background-video-small {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .about-h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        animation: fadeIn 1s ease-in-out forwards; /* Adding fadeIn animation */
+    }
+
+    .about-p {
+        font-size: 23px;
+        line-height: 1.6;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        opacity: 0; /* Start hidden */
+        animation: fadeIn 1s ease-in-out forwards; /* Adding fadeIn animation */
+        animation-delay: 0.5s; /* Delay for paragraphs */
+    }
+    #contact {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+/* Apply hover effect to the entire contact section */
+.contact-section:hover .contact-p {
+    animation: textHover 0.5s ease forwards; /* Trigger hover animation */
+}
+
+.contact-h {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1s ease-in-out forwards; /* Initial fadeIn animation */
+    margin-top: 140px;
+}
+
+.contact-description {
+    font-size: 32px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 1; /* Fully visible */
+    animation: fadeIn 1s ease-in-out forwards; /* Initial fadeIn animation */
+    animation-delay: 0.5s; /* Delay for paragraphs */
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    font-weight: 400; /* Adjust the weight if necessary */
+    color: white; /* Text color */
+}
+
+/* FadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1; /* Fully opaque */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* Text Hover Animation for .contact-p */
+@keyframes textHover {
+    0% {
+        transform: translateY(0); /* Original position */
+        opacity: 1; /* Fully opaque */
+    }
+    50% {
+        transform: translateY(-10px); /* Move slightly upward */
+        opacity: 0.8; /* Slightly fade */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+        opacity: 1; /* Fully opaque again */
+    }
+}
+
+
+
+
+
+.contact-section .mouse-btn {
+    display: none;  
+    overflow: hidden;
+}
+
+
+    .footer {
+    width: 100%;
+    height: 50px;
+    position: relative; /* Keeps the footer within the normal document flow */
+    color: white;
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    background-color: #333; /* Dark background for better visibility */
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    padding: 20px 0; /* Adds some padding for spacing */
+    box-sizing: border-box; /* Includes padding in the element's total width/height */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0; /* Adjust padding for smaller screens */
+    }
+}
+
+
+        .scroll-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            visibility: hidden;
+        }
+
+        .scroll-buttons {
+            position: absolute;
+            left: -9999px; /* Move the buttons off-screen */
+        }
+        .mouse-btn {
+    width: 80px; 
+    height: auto; /* Allow height to adjust automatically based on content */
+    margin-top: 400px; /* Margin to give space from the bottom */
+    text-align: center; /* Center the text horizontally */
+    position: fixed;   
+    display: flex; /* Aligns the image and text */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Centers the content horizontally */
+}
+
+.mouse-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    
+     /* Optional: If you want rounded borders */
+}
+.scroll {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;     /* Centers the content vertically inside the element */
+    position: fixed;         /* Positions the element relative to the viewport */
+    bottom: 90px;               /* Places it at the bottom of the page */
+    left: 50%;               /* Aligns to the center of the viewport horizontally */
+    transform: translateX(-50%); /* Shifts it back by 50% to truly center it */
+    width: 100%;             /* Optional: You can adjust the width as needed */
+     /* Optional: Set a background color if desired */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: larger;
+}
+.scroll-down {
+    font-size: 24px; /* Adjust size of the arrow */
+    font-weight: bold;
+    text-align: center;
+    color:white; /* Arrow color */
+    position: fixed;
+    bottom: 45px; /* Distance from the bottom of the page */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to truly center */
+    animation: bounce 1s infinite; /* Optional: Add a bounce animation */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -10px);
+    }
+}
+
+
+
+.mouse-btn span {
+    display: block; /* Ensure the text takes the full width */
+    white-space: nowrap; /* Prevent the text from wrapping */
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px; /* Adjust heading size */
+    }
+
+    .hero p {
+        font-size: 16px; /* Smaller text for mobile */
+    }
+
+    .products-description {
+        font-size: 30px; /* Adjusted font for mobile */
+    }
+
+    .products-list li {
+        font-size: 16px; /* Adjust list font size */
+    }
+}
+
+.contact-p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .contact-p a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .icon:hover {
+    transform: scale(1.1); /* Slight zoom-in on hover */
+  }
+  @media (min-width: 1920px) {
+    /* Styles for 1920px and above */
+    body {
+        font-size: 18px; /* Base font size for large screens */
+    }
+    header {
+        margin-top: 30px;
+    }
+    nav ul li a {
+        font-size: 32px;
+    }
+    .logo-img{
+        width: 350px;
+    }
+    .hero h1 {
+        font-size: 80px; /* Larger heading size */
+    }
+
+    .hero p {
+        font-size: 26px; /* Larger paragraph size */
+    }
+    .products-title {
+        margin-top: 250px;
+        font-size: 48px; 
+    }
+    .products-description {
+        font-size: 60px; /* Adjusted description size */
+    }
+
+    .products-list {
+        font-size: 38px; /* Adjusted font size for list items */
+        margin-top: 30px;
+    }
+    .product-section span {
+        font-size:44px; /* Adjusted font size for product section */
+        margin-left: 28px;
+    }
+
+    .about-h2 {
+        font-size: 48px; /* Larger heading size */
+    }
+
+    .about-p {
+        font-size: 34px; /* Larger paragraph size */
+    }
+
+    .contact-h {
+        margin-top: 300px;
+        font-size: 64px; /* Larger contact heading */
+    }
+
+    .contact-description {
+        margin-top: 15px;
+        font-size: 48px; /* Larger paragraph size */
+    }
+    .contact-p{
+        font-size: 44px;
+    }
+
+    .footer {
+        padding: 30px; /* More padding for footer */
+    }
+}
+@media (min-width: 1280px) and (max-width: 1919px) {
+    /* Styles for 1280px to 1919px */
+    body {
+        font-size: 16px; /* Base font size for medium screens */
+    }
+    nav ul li a {
+        font-size: 24px;
+    }
+    .logo-img{
+        width: 250px;
+    }
+    .hero h1 {
+        font-size: 60px; /* Adjusted heading size */
+    }
+
+    .hero p {
+        font-size: 22px; /* Adjusted paragraph size */
+    }
+
+    .products-description {
+        font-size: 38px; /* Adjusted description size */
+    }
+
+    .products-list {
+        font-size: 20px; /* Adjusted font size for list items */
+    }
+    .product-section span {
+        font-size: 24px; /* Adjusted font size for product section */
+        margin-left: 28px;
+    }
+
+    .about-h2 {
+        font-size: 36px; /* Adjusted heading size */
+    }
+
+    .about-p {
+        font-size: 24px; /* Adjusted paragraph size */
+    }
+
+    .contact-h {
+        margin-top: 220px;
+        font-size: 36px; /* Adjusted contact heading */
+    }
+
+    .contact-description {
+        font-size: 28px; /* Adjusted paragraph size */
+    }
+
+    .footer {
+        padding: 20px; /* Adjusted padding for footer */
+    }
+}
+@media (min-width: 360px) and (max-width: 514px) {
+    /* Styles for mobile devices */
+
+    body {
+        font-size: 14px; /* Base font size for mobile screens */
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Smaller font size for navigation links */
+        display: none;
+    }
+    
+    
+    .logo-img {
+        position: static;
+        margin-top: 55px;
+        width: 250px; /* Adjust logo size for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 30px; /* Adjusted heading size for mobile */
+        margin-bottom: 10px; /* Added margin for spacing */
+    }
+
+    .hero p {
+        font-size: 16px; /* Adjusted paragraph size for mobile */
+        margin-bottom: 20px; /* Added margin for spacing */
+    }
+    #about .logo-img {
+        display: none;
+    }
+    .products-description {
+        font-size: 22px; /* Adjusted description size for mobile */
+        line-height: 1.4; /* Increased line height for readability */
+    }
+
+    .products-list {
+        font-size: 16px; /* Adjusted font size for list items */
+    }
+
+    .product-section span {
+        font-size: 20px; /* Adjusted font size for product section */
+        margin-left: 10px; /* Adjusted margin for spacing */
+    }
+
+    .about-h2 {
+        font-size: 28px; /* Adjusted heading size for about section */
+    }
+
+    .about-p {
+        font-size: 18px; /* Adjusted paragraph size for about section */
+    }
+
+    .contact-h {
+        margin-top: 120px; /* Reduced margin for contact heading */
+        font-size: 28px; /* Adjusted contact heading size */
+    }
+
+    .contact-description {
+        font-size: 22px; /* Adjusted paragraph size for contact section */
+    }
+
+    .footer {
+        padding: 10px; /* Adjusted padding for footer */
+        text-align: center; /* Centered footer text for better appearance */
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="Bhatti Chemicals Industry.html"><img class="logo-img" src="bhatti-chemicals-logo-png.gif" alt="Bhatti Chemicals Logo"></a></div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="first .mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Shaping a Sustainable Future<br> for a Better Tomorrow</h1>
+            <p>Premium Quality Zinc Oxide Products for Various Industries.</p>
+        </div>
+        <div class="mouse-btn">
+            <!-- <img class="mouse-img" src="mouse-icon.jpg" alt="Mouse clicker image"> -->
+            
+        </div>
+        <div class="scroll">SCROLL DOWN</div>
+        <div class="scroll-down">
+            &#x25BC;<!-- Unicode arrow symbol for down -->
+          </div>
+          
+        
+    </section>
+    <section class="content-section" id="about">
+        <video autoplay muted loop playsinline class="background-video-small">
+            <source src="about.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2 class="about-h2">About Us</h2>
+        <p class="about-p">
+            We are a Leading Manufacturer of Zinc Oxide,<br> 
+            Providing High-Quality Products to Industries like Rubber, Glass, Ceramics, and more.<br> 
+            Our Commitment to Quality and Sustainability sets us apart in the Market.
+       
+    </section>
+    <section class="product-section" id="products">
+        <video autoplay muted loop playsinline class="background-video-small">
+            <source src="product.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+        </video>
+        <h2 class="products-title">Products</h2>
+        <p class="products-description">
+            Creating new Value with the World's Best <br> 
+            Oxide's Technology <br>
+            <span>Various Use in</span>
+        </p>
+        <ul class="products-list">
+            <li>Rubber Manufacturing Industries</li>
+            <li>Paint and Ceramics</li>
+            <li>Pharmaceuticals and Cosmetics</li>
+            <li>Glass Manufacturing Industries</li>
+            <li>Animal feed and Fertilizers</li>
+        </ul>
+    </section>
+    
+
+
+<section class="contact-section" id="contact">
+    <video autoplay muted loop playsinline class="background-video-small">
+        <source src="contact.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h2 class="contact-h">Contact Us</h2>
+    <p class="contact-description">For Inquiries or more Information, Please get in touch with us at:</p>
+    <p class="contact-p">
+        <a href="mailto:bhattichemicalsindustry@gmail.com"><img class="icon" src="mail-icon.webp" alt=""> bhattichemicalsindustry@gmail.com</a>
+      </p>
+      
+    <p class="contact-p"><a href="https://wa.me/9203041462460"><img class="icon" src="WhatsApp_icon.png" alt="">  +92 304 1462460 </a></p>
+    <p class="contact-p">UAN: +92 55 4295107  </p>
+    <p class="contact-p">TEL: +92 304 1462460  </p>
+
+    
+      <div class="footer"> 2024 Bhatti Chemicals Industry All Rights Reserved. </div>
+    </section>
+
+    <div class="scroll-buttons">
+        <div class="scroll-button" id="scroll-up">
+            <img src="E:/factory website/mouse-clicker.png" alt="Scroll Up" class="scroll-icon">
+            <span><br>Scroll Up</span>
+        </div>
+        <div class="scroll-button" id="scroll-down">
+            <img src="mouse-clicker.png" alt="Scroll Down" class="scroll-icon">
+            <span><br>Scroll Down</span>
+        </div>
+    </div>
+
+  
+
+    <script>
+let isScrolling = false; // Track scrolling state
+let wheelTimeout; // To handle wheel event throttling
+
+function scrollPage(direction) {
+    if (isScrolling) return; // Prevent multiple scrolls at once
+    isScrolling = true;
+
+    const duration = 600; // Adjust this value for scrolling speed (milliseconds)
+    const start = window.scrollY;
+    const end = start + direction * window.innerHeight;
+
+    // Ensure we don't scroll beyond the document boundaries
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    const targetScroll = Math.max(0, Math.min(end, maxScroll));
+
+    const change = targetScroll - start;
+    const startTime = performance.now();
+
+    function animateScroll(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+        window.scrollTo(0, start + change * progress);
+        if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+        } else {
+            isScrolling = false; // Reset scrolling state
+            updateButtons(); // Update buttons based on scroll position
+        }
+    }
+
+    requestAnimationFrame(animateScroll);
+}
+
+function smoothScrollTo(target) {
+    if (isScrolling) return; // Prevent multiple scrolls at once
+    isScrolling = true;
+
+    const duration = 600; // Adjust this value for scrolling speed (milliseconds)
+    const start = window.scrollY;
+    const targetPosition = target.getBoundingClientRect().top + start;
+    const change = targetPosition - start;
+    const startTime = performance.now();
+
+    function animateScroll(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+        window.scrollTo(0, start + change * progress);
+        if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+        } else {
+            isScrolling = false; // Reset scrolling state
+        }
+    }
+
+    requestAnimationFrame(animateScroll);
+}
+
+function updateButtons() {
+    const scrollUpButton = document.getElementById("scroll-up");
+    const scrollDownButton = document.getElementById("scroll-down");
+
+    // Show/hide buttons based on scroll position
+    scrollUpButton.style.display = window.scrollY > 0 ? "block" : "none"; // Show/hide scroll up
+    scrollDownButton.style.display = window.scrollY + window.innerHeight < document.body.scrollHeight ? "block" : "none"; // Show/hide scroll down
+}
+
+// Attach scroll functionality to the buttons
+document.getElementById("scroll-down").addEventListener("click", function() {
+    scrollPage(1); // Scroll down
+});
+
+document.getElementById("scroll-up").addEventListener("click", function() {
+    scrollPage(-1); // Scroll up
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        if (target) {
+            smoothScrollTo(target);
+        }
+    });
+});
+
+// Mouse wheel and touchpad scrolling
+window.addEventListener("wheel", function(event) {
+    event.preventDefault(); // Prevent default scroll behavior
+    clearTimeout(wheelTimeout); // Clear any previous timeout
+
+    wheelTimeout = setTimeout(() => {
+        const scrollDirection = event.deltaY > 0 ? 1 : -1;
+        scrollPage(scrollDirection); // Scroll down if wheel is scrolled down, otherwise scroll up
+    }, 10); // Adjust the timeout duration if needed
+}, { passive: false });
+
+// Keyboard scrolling
+window.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowDown") {
+        event.preventDefault(); // Prevent default action
+        scrollPage(1); // Scroll down
+    } else if (event.key === "ArrowUp") {
+        event.preventDefault(); // Prevent default action
+        scrollPage(-1); // Scroll up
+    }
+});
+
+// Update buttons on page load and scroll
+window.addEventListener("load", updateButtons);
+window.addEventListener("scroll", updateButtons);
+
+// Intersection Observer for hiding the scroll element in the contact section
+const observerOptions = {
+    root: null, // Use the viewport as the root
+    threshold: 0.1 // When 10% of the contact section is visible
+};
+
+const observer = new IntersectionObserver((entries) => {
+    const scrollElements = document.querySelectorAll('.scroll, .scroll-down'); // Select multiple elements
+    entries.forEach(entry => {
+        scrollElements.forEach(scrollElement => {
+            if (entry.isIntersecting) {
+                scrollElement.style.display = 'none'; // Hide all scroll elements when the contact section is in view
+            } else {
+                scrollElement.style.display = 'block'; // Show all scroll elements when the contact section is out of view
+            }
+        });
+    });
+});
+
+// Target the contact section
+const contactSection = document.querySelector('.contact-section');
+if (contactSection) {
+    observer.observe(contactSection); // Start observing the contact section
+}
+
+
+
+
+
+    </script>
+      
+   
+</body>
+</html>
